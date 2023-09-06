@@ -131,6 +131,19 @@
           </MeasureGroup>
         </MeasureGroups>
       </Cube>
+      <Cube>
+        <ID>COMPLETO</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fato Completa</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fato Completa</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
     </Cubes>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>

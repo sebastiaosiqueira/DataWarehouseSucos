@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{EC1D61FA-BC6B-462F-936A-759D5719D580}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{D99994A1-52A4-4BF7-BFA8-02AD17652F29}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -121,6 +121,39 @@
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Carga OLAPs"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Carga OLAPs"
+      DTS:DTSID="{11fa7796-dc85-4c3d-8cd6-627f8f1d622f}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga OLAPs"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>CargaCubos.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>Ano_Final</ParameterName>
+            <BindedVariableOrParameterName>$Package::Ano_final</BindedVariableOrParameterName>
+          </ParameterAssignment>
+          <ParameterAssignment>
+            <ParameterName>Ano_Inicial</ParameterName>
+            <BindedVariableOrParameterName>$Package::Ano_Inicial</BindedVariableOrParameterName>
+          </ParameterAssignment>
+          <ParameterAssignment>
+            <ParameterName>Mes_Final</ParameterName>
+            <BindedVariableOrParameterName>$Package::Mes_Final</BindedVariableOrParameterName>
+          </ParameterAssignment>
+          <ParameterAssignment>
+            <ParameterName>Mes_Inicial</ParameterName>
+            <BindedVariableOrParameterName>$Package::Mes_Inicial</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -131,6 +164,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restrição"
       DTS:To="Package\Carga Fatos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restrição 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6BAFB3C6-403B-4F28-8040-70826EC15A63}"
+      DTS:From="Package\Carga Fatos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restrição 1"
+      DTS:To="Package\Carga OLAPs" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
@@ -143,7 +184,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="161,42"
           Id="Package\Carga Dimensões"
@@ -178,6 +219,44 @@
                     Point3="8,79" />
                   <mssgle:LineSegment
                     End="8,142.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Carga OLAPs"
+          TopLeft="330,299" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restrição 1]"
+          TopLeft="418.5,239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21,60"
+              Start="0,0"
+              End="-21,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-17,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17,30"
+                    Point2="-21,30"
+                    Point3="-21,34" />
+                  <mssgle:LineSegment
+                    End="-21,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

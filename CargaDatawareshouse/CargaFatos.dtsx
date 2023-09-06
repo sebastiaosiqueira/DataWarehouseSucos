@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaFatos"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{6AB80021-826E-440E-B808-10B4F4D16641}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{3E6BB48C-732C-49DC-A546-6F018B481443}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -62,21 +62,21 @@
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DataType="4"
+      DTS:DataType="8"
       DTS:DTSID="{5FDD2DB5-1D74-4068-B851-1A16F9F74FD0}"
       DTS:ObjectName="Mes_Final">
       <DTS:Property
-        DTS:DataType="4"
-        DTS:Name="ParameterValue">2.</DTS:Property>
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">12</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DataType="4"
+      DTS:DataType="8"
       DTS:DTSID="{C3B07451-C798-4786-B548-F20CB31F294A}"
       DTS:ObjectName="Mes_Inicial">
       <DTS:Property
-        DTS:DataType="4"
-        DTS:Name="ParameterValue">1.</DTS:Property>
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">1</DTS:Property>
     </DTS:PackageParameter>
   </DTS:PackageParameters>
   <DTS:Variables />
@@ -5194,7 +5194,9 @@ AND MONTH(DATA_FATO) &lt;=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5440,7 +5442,9 @@ AND MONTH(DATA_FATO) &lt;=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5656,7 +5660,9 @@ AND MONTH(DATA_FATO) &lt;=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5860,7 +5866,9 @@ AND MONTH(DATA_FATO) &lt;=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6076,7 +6084,9 @@ AND MONTH(DATA_FATO) &lt;=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
