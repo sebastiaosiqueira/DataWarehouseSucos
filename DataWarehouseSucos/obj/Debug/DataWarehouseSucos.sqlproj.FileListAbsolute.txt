@@ -1,0 +1,10 @@
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\bin\Debug\DataWarehouseSucos.dacpac
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\bin\Debug\DataWarehouseSucos.dll
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\bin\Debug\DataWarehouseSucos.pdb
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\DataWarehouseSucos.sqlproj.AssemblyReference.cache
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\DataWarehouseSucos.dll
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\DataWarehouseSucos.pdb
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\Model.xml
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\refactor.xml
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\postdeploy.sql
+C:\Users\3346.ADM-UCDB\Desktop\Projetos\DataWarehouseSucos\DataWarehouseSucos\obj\Debug\predeploy.sql
